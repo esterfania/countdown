@@ -1,0 +1,29 @@
+.profileContainer {
+  display: flex;
+  align-items: center;
+}
+.profileAvatarImage {
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+}
+
+.profileText {
+  margin-left: 1.5rem;
+}
+
+.profileText > :first-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--title);
+}
+
+.profileText p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.profileText > p > span {
+  margin-left: 0.5rem;
+}
