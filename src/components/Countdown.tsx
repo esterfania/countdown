@@ -4,7 +4,7 @@ import { CountdownButton } from './CountdownButton';
 
 export function Countdown() {
   const [time, setTime] = useState(30 * 60);
-  const [active, setActive] = useState(false);
+  const [isActive, setisActive] = useState(false);
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
 
@@ -12,15 +12,15 @@ export function Countdown() {
   const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('');
 
   useEffect(() => {
-    if (active && time > 0) {
+    if (isActive && time > 0) {
       setTimeout(() => {
         setTime(time - 1);
       }, 1000);
     }
-  }, [active, time]);
+  }, [isActive, time]);
 
   function startCountdonw() {
-    setActive(true);
+    setisActive(true);
   }
 
   return (
