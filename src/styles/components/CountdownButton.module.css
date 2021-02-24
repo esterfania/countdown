@@ -1,4 +1,4 @@
-.startButton {
+.countdownButton {
   background: var(--blue);
   color: var(--white);
   border-radius: 5px;
@@ -10,6 +10,6 @@
   font-size: 1.25rem;
   transition: background-color 0.2s;
 }
-.startButton:hover {
+.countdownButton:hover {
   background: var(--blue-dark);
 }

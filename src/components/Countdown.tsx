@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/components/Countdown.module.css';
-import { StartButton } from './StartButton';
+import { CountdownButton } from './CountdownButton';
 
 export function Countdown() {
   const [time, setTime] = useState(30 * 60);
@@ -36,7 +36,7 @@ export function Countdown() {
           <span>{secondRight}</span>
         </div>
       </div>
-      <StartButton onClick={startCountdonw}> Iniciar um ciclo </StartButton>
+      <CountdownButton onClick={startCountdonw}> Iniciar um ciclo </CountdownButton>
     </>
   );
 }
