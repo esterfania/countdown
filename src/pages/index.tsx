@@ -15,7 +15,7 @@ export default function Home() {
       <Head>
         <title>Início | move.it</title>
       </Head>
-      <ExperienceBar value={300} />
+      <ExperienceBar/>
       <section>
         <div>
           <Profile />
