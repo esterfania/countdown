@@ -1,34 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h2 align="center">
+  Countdown
+</h2>
+  
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/esterfania/countdown?color=%2304D361">
 
-## Getting Started
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/esterfania/countdown">
 
-First, run the development server:
+  	
+  <a href="https://www.linkedin.com/in/esterfania-gama/">
+    <img alt="Made by esterfania" src="https://img.shields.io/badge/made%20by-esterfania-%2304D361">
+  </a>
+	
+  
+  <a href="https://github.com/Gabrielpdev/Move-Yourself/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/esterfania/countdown">
+  </a>
 
-```bash
-npm run dev
-# or
-yarn dev
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/esterfania/countdown/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/esterfania/countdown?style=social">
+  </a>
+</p>
+
+<h2 align="center">
+    <img alt="Move-Yourself" title="#Move-Yourself" src="https://user-images.githubusercontent.com/35200622/109156085-34fc3e00-774f-11eb-970a-67224d3a7929.png" width="350px" />
+</h2>
+
+
+## 📝 Conteúdo
+<p align="center">
+<a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#getting_started">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#built_using">Tecnologias Utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#contribute">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+
+## 🧐 Sobre <a name = "about"></a>
+
+Move-Yourself é uma Aplicação feita durante a **NWL 4.0** oferecido pela [Rocketseat] :rocket:.<br/> 
+A aplicação visa ajudar pessoas que ficam muito tempo na frente do computador e se esquecem de tempo em tempo
+se alongar. Usando do método de Pomodoro, lembrando o usuário a cada período de tempo realizar uma atividade
+que ao ser realizada, o usuário ganha experiência, subindo seu level<br/> 
+
+
+<span align="center">
+	<h2>Demo</h2>
+  <a href="https://countdown-swart.vercel.app/">Link</a>
+</span>
+
+
+## 🏁 Iniciando <a name = "getting_started"></a>
+
+Instruções de como acessar as rotas e instalação.
+
+### ⚒ Instalando <a name = "installing"></a>
+
 ```
+# 💻 Iniciando
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+$ cd web
+$ yarn install
+$ yarn start
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+## ⛏️ Tecnologias Utilizadas <a name = "built_using"></a>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+As seguintes ferramentas foram usadas na construção do projeto:
+- 🔵 [TypeScript][typescript]
+- ⚛️ [React][reactjs]
+- 🔼 [NextJs][next]
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🤔 Como contribuir <a name = "contribute"></a>
 
-## Learn More
+- Faça um fork desse repositório;
+- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
+- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça push para a sua branch: `git push origin minha-feature`.
 
-To learn more about Next.js, take a look at the following resources:
+Feito com ❤️ por Esterfania Gama 👋🏽 [Entre em contato!](https://www.linkedin.com/in/esterfania-gama/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[next]: https://nextjs.org/
+[typescript]: https://www.typescriptlang.org/
+[reactjs]: https://reactjs.org
+[Rocketseat]:https://github.com/Rocketseat
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
