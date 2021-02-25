@@ -4,10 +4,10 @@ import {
   Profile,
   CompletedChallenges,
   Countdown,
-  StartButton,
 } from '../components';
 import Head from 'next/head';
 import styles from '../styles/pages/Home.module.css';
+import { ChallengeBox } from '../components/ChallengeBox';
 
 export default function Home() {
   return (
@@ -22,7 +22,9 @@ export default function Home() {
           <CompletedChallenges />
           <Countdown></Countdown>
         </div>
-        <div></div>
+        <div>
+          <ChallengeBox />
+        </div>
       </section>
     </main>
   );
