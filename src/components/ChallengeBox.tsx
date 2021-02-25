@@ -1,7 +1,10 @@
+import { useContext } from 'react';
 import styles from '../styles/components/ChallengeBox.module.css';
-import { CountdownButton, CountdownButtonEnum } from './CountdownButton';
+import { ChallengesContext } from '../contexts/ChallengesContext';
 
 export function ChallengeBox() {
+  const contextData = useContext(ChallengesContext);
+  console.log(contextData);
   const hasActiveChallenge = true;
   return (
     <section className={styles.challengeBoxContainer}>
@@ -33,10 +36,7 @@ function ChallengeBoxActive() {
           <img src='icons/body.svg' alt='body' />
           <figcaption>
             <strong>Exercite-se</strong>
-            <p>
-              É agora Ester, bora lá minha parça. Caminhe por 3 minutos e
-              estique suas pernas pra você ficar saudável.
-            </p>
+            <p>Levante e faça uma caminhada de 3 minutos.</p>
           </figcaption>
         </figure>
       </main>

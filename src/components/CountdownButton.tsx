@@ -1,8 +1,9 @@
+import { MouseEventHandler, ReactNode } from 'react';
 import styles from '../styles/components/CountdownButton.module.css';
 
 interface CountdownButtonProps {
-  children: React.ReactNode;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  children: ReactNode;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
   type?: CountdownButtonEnum;
   isDisabled?: boolean;
 }
