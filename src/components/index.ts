@@ -4,3 +4,4 @@ export * from './CompletedChallenges';
 export * from './Countdown';
 export * from './CountdownButton';
 export * from './ChallengeBox';
+export * from './LevelUpModal';
