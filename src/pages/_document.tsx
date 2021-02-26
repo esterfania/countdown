@@ -1,4 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import React from 'react';
+import { Navbar } from '../components';
 export default class MyDocument extends Document {
   render() {
     return (
@@ -16,6 +18,7 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
+          <Navbar></Navbar>
           <Main />
           <NextScript />
         </body>

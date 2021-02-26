@@ -7,7 +7,7 @@
 :root {
   --white: #fff;
   --background: #f2f3f5;
-  --gray-line: #D7D8DA;
+  --gray-line: #d7d8da;
   --text: #666666;
   --text-highlight: #b3b9ff;
   --title: #2e384d;
@@ -33,6 +33,9 @@
 body {
   background: var(--background);
   color: var(--text);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 body,
@@ -50,4 +53,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
