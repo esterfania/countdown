@@ -31,3 +31,8 @@
   cursor: not-allowed;
   border-bottom: 0.25rem solid var(--green);
 }
+
+.countdownButton > img {
+  padding-left: 0.5rem;
+  vertical-align: middle;
+}

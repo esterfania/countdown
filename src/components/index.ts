@@ -5,3 +5,4 @@ export * from './Countdown';
 export * from './CountdownButton';
 export * from './ChallengeBox';
 export * from './LevelUpModal';
+export * from './Navbar';
