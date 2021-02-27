@@ -1,6 +1,6 @@
 .container {
   height: 100vh;
-  max-width: 992px;
+  width: 62rem;
   margin: 0 auto;
   padding: 2.5rem 2rem;
   display: flex;
@@ -13,4 +13,20 @@
   grid-template-columns: 1fr 1fr;
   gap: 6.25rem;
   align-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .container > section {
+    flex: 1;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    align-content: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
 }
