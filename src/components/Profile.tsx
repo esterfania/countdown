@@ -7,12 +7,12 @@ export function Profile() {
   return (
     <section className={styles.profileContainer}>
       <img
-        alt='Ester Gama'
-        src='https://github.com/esterfania.png'
+        alt='Julia Nogueira'
+        src='https://user-images.githubusercontent.com/35200622/109367837-fad98c00-7875-11eb-91c1-6a0bbcfbf7cb.png'
         className={styles.profileAvatarImage}
       />
       <div className={styles.profileText}>
-        <strong>Ester Gama</strong>
+        <strong>Julia Nogueira</strong>
         <p>
           <img src='icons/level.svg' alt='Level' />
           <span>Level {level}</span>

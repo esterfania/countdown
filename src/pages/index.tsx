@@ -7,6 +7,7 @@ import {
   Profile,
   CompletedChallenges,
   Countdown,
+  Navbar,
 } from '../components';
 import styles from '../styles/pages/Home.module.css';
 import { ChallengeBox } from '../components/ChallengeBox';
@@ -26,6 +27,7 @@ export default function Home(props: HomeProps) {
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
     >
+      <Navbar></Navbar>
       <main className={styles.container}>
         <Head>
           <title>Início | move.it</title>

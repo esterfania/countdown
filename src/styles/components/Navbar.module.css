@@ -3,7 +3,7 @@
   height: 100%;
   background: var(--white);
   display: flex;
-  width: 7rem;
+  width: 4.5rem;
   align-items: center;
   justify-content: center;
   box-sizing: content-box;
@@ -31,6 +31,8 @@
 
 .logo {
   position: absolute;
+  right: 0;
+  left: 0;
   top: 0;
-  padding: 2rem;
+  background: url('/logo.png') no-repeat center;
 }
