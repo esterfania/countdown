@@ -55,19 +55,11 @@ interface CountdownButtonProps {
 
 export function CountdownButton(props: CountdownButtonProps) {
   return props.active ? (
-    <ButtonWrapperActive
-      type='button'
-      onClick={props.onClick}
-      disabled={props.isDisabled}
-    >
+    <ButtonWrapperActive type="button" onClick={props.onClick} disabled={props.isDisabled}>
       {props.children}
     </ButtonWrapperActive>
   ) : (
-    <ButtonWrapper
-      type='button'
-      onClick={props.onClick}
-      disabled={props.isDisabled}
-    >
+    <ButtonWrapper type="button" onClick={props.onClick} disabled={props.isDisabled}>
       {props.children}
     </ButtonWrapper>
   );

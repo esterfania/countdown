@@ -1,7 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import React from 'react';
 import { AppProps } from 'next/dist/next-server/lib/router/router';
-import { Head } from 'next/document';
 
 const theme = {
   white: '#fff',

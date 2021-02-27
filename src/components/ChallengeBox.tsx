@@ -106,11 +106,7 @@ const ChallengeBoxContainer = styled.section`
   align-items: center;
   text-align: center;
 `;
-function ChallengeBoxActive({
-  activeChallenge,
-  resetChallenge,
-  completeChallenge,
-}) {
+function ChallengeBoxActive({ activeChallenge, resetChallenge, completeChallenge }) {
   return (
     <ChallengeBoxActiveWrapper>
       <header>
@@ -118,7 +114,7 @@ function ChallengeBoxActive({
       </header>
       <main>
         <figure>
-          <img src={`icons/${activeChallenge.type}.svg`} alt='body' />
+          <img src={`icons/${activeChallenge.type}.svg`} alt="body" />
           <figcaption>
             <strong>Exercite-se</strong>
             <p>{activeChallenge.description}</p>
@@ -126,10 +122,10 @@ function ChallengeBoxActive({
         </figure>
       </main>
       <footer>
-        <button type='button' onClick={resetChallenge}>
+        <button type="button" onClick={resetChallenge}>
           Falhei
         </button>
-        <button type='button' onClick={completeChallenge}>
+        <button type="button" onClick={completeChallenge}>
           Completei
         </button>
       </footer>
@@ -138,9 +134,7 @@ function ChallengeBoxActive({
 }
 
 export function ChallengeBox() {
-  const { activeChallenge, resetChallenge, completeChallenge } = useContext(
-    ChallengesContext
-  );
+  const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext);
   const { resetCountdonw } = useContext(CountdownContext);
 
   function handleChallengeSucceded() {
@@ -165,7 +159,7 @@ export function ChallengeBox() {
         <ChallengeBoxNotActive>
           <strong>Inicie um ciclo para receber desafios</strong>
           <figure>
-            <img src='icons/level-up.svg' alt='level up' />
+            <img src="icons/level-up.svg" alt="level up" />
             <figcaption> Avance de level completando os desafios.</figcaption>
           </figure>
         </ChallengeBoxNotActive>

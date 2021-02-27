@@ -32,11 +32,11 @@ export function Profile() {
   const { level } = useContext(ChallengesContext);
   return (
     <ProfileWrapper>
-      <img alt='Julia Nogueira' src='/img.png' />
+      <img alt="Julia Nogueira" src="/img.png" />
       <div>
         <strong>Julia Nogueira</strong>
         <p>
-          <img src='icons/level.svg' alt='Level' />
+          <img src="icons/level.svg" alt="Level" />
           <span>Level {level}</span>
         </p>
       </div>

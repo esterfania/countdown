@@ -36,21 +36,16 @@ const ExperienceBarWrapper = styled.header`
 `;
 
 export function ExperienceBar() {
-  const { currentExperience, experienceToNextLevel } = useContext(
-    ChallengesContext
-  );
+  const { currentExperience, experienceToNextLevel } = useContext(ChallengesContext);
 
-  const percentToNextLevel =
-    Math.round(currentExperience * 100) / experienceToNextLevel;
+  const percentToNextLevel = Math.round(currentExperience * 100) / experienceToNextLevel;
 
   return (
     <ExperienceBarWrapper>
       <span>0 xp</span>
       <div>
         <div style={{ width: `${percentToNextLevel}%` }}></div>
-        <span style={{ left: `${percentToNextLevel}%` }}>
-          {currentExperience} xp
-        </span>
+        <span style={{ left: `${percentToNextLevel}%` }}>{currentExperience} xp</span>
       </div>
       <span>{experienceToNextLevel} xp</span>
     </ExperienceBarWrapper>
