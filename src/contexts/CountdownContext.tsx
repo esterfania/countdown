@@ -19,7 +19,7 @@ interface CountdownContextData {
 }
 
 interface CountdownProviderProps {
-  children: ReactNode;
+  children?: ReactNode;
 }
 let countdownTimeout: NodeJS.Timeout;
 
