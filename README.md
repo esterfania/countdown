@@ -24,7 +24,7 @@
 </p>
 
 <h2 align="center">
-    <img alt="Move-Yourself" title="#Move-Yourself" src="https://user-images.githubusercontent.com/35200622/109156085-34fc3e00-774f-11eb-970a-67224d3a7929.png" width="350px" />
+    <img alt="Move-Yourself" title="#Move-Yourself" src="https://user-images.githubusercontent.com/35200622/109371085-f3b87b00-7881-11eb-991c-0dbfebf3fe9f.png" width="350px" />
 </h2>
 
 
