@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const NavbarWrapper = styled.header`
   position: absolute;
   height: 100%;
-  background: ${props => props.theme.white};
+  background: ${(props) => props.theme.white};
   display: flex;
   width: 4.5rem;
   align-items: center;
@@ -27,12 +27,45 @@ const NavbarWrapper = styled.header`
       background: url('/logo.png') no-repeat center;
     }
     > :nth-child(2) {
-      border-left: 4px solid ${props => props.theme.blue};
+      border-left: 4px solid ${(props) => props.theme.blue};
       background: url('/icons/blue-home.png') no-repeat center;
     }
 
     > :last-child {
       background: url('/icons/gray-ranking.png') no-repeat center;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    height: 5rem;
+    background: var(--white);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      div {
+        display: inline-block;
+        transition: width 2ms;
+        padding: 2rem;
+        text-align: center;
+        border-left: 4px solid transparent;
+      }
+
+      > :first-child {
+        position: absolute;
+        right: auto;
+        background: url('/logo.png') no-repeat center;
+      }
+      > :nth-child(2) {
+        border: none;
+        background: url('/icons/blue-home.png') no-repeat center;
+      }
+      > :last-child {
+        background: url('/icons/gray-ranking.png') no-repeat center;
+      }
     }
   }
 `;
