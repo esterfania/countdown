@@ -26,7 +26,7 @@ interface ChallengsProviderProps {
   level: number;
   currentExperience: number;
   challengesCompleted: number;
-  children: ReactNode;
+  children?: ReactNode;
 }
 export function ChallengesProvider({
   children,
