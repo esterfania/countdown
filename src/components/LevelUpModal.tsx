@@ -15,7 +15,7 @@ const Modal = styled.div`
   align-items: center;
 
   div {
-    background: ${props => props.theme.white};
+    background: ${(props) => props.theme.white};
     width: 100%;
     max-width: 400px;
     padding: 2rem 3rem;
@@ -59,8 +59,8 @@ export function LevelUpModal() {
         <strong>Parabéns</strong>
         <p>Você alcançou um novo level.</p>
 
-        <button type='button' onClick={closeLevelUpModal}>
-          <img src='/icons/close.svg' alt='Fecha modal'></img>
+        <button type="button" onClick={closeLevelUpModal}>
+          <img src="/icons/close.svg" alt="Fecha modal"></img>
         </button>
       </div>
     </Modal>

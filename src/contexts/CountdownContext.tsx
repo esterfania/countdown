@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useState,
-  ReactNode,
-  useContext,
-  useEffect,
-} from 'react';
+import { createContext, useState, ReactNode, useContext, useEffect } from 'react';
 import { ChallengesContext } from '../contexts/ChallengesContext';
 
 export const CountdownContext = createContext({} as CountdownContextData);
@@ -43,7 +37,7 @@ export function CountdownProvider(props: CountdownProviderProps) {
       setHasFinished(true);
       startNewChallenge();
     }
-  }, [isActive, time]);
+  }, [isActive, time, startNewChallenge]);
 
   function startCountdown() {
     setIsActive(true);

@@ -42,14 +42,9 @@ const CountdownWrapper = styled.div`
 `;
 
 export function Countdown() {
-  const {
-    minutes,
-    seconds,
-    hasFinished,
-    isActive,
-    resetCountdonw,
-    startCountdown,
-  } = useContext(CountdownContext);
+  const { minutes, seconds, hasFinished, isActive, resetCountdonw, startCountdown } = useContext(
+    CountdownContext
+  );
 
   const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');
   const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('');
@@ -70,7 +65,7 @@ export function Countdown() {
       {hasFinished ? (
         <CountdownButton isDisabled={true}>
           Ciclo encerrado
-          <img src='/icons/check_circle.svg' alt='check_circle'></img>
+          <img src="/icons/check_circle.svg" alt="check_circle"></img>
         </CountdownButton>
       ) : (
         <>
@@ -79,9 +74,7 @@ export function Countdown() {
               Abandonar ciclo
             </CountdownButton>
           ) : (
-            <CountdownButton onClick={startCountdown}>
-              Iniciar um ciclo
-            </CountdownButton>
+            <CountdownButton onClick={startCountdown}>Iniciar um ciclo</CountdownButton>
           )}
         </>
       )}

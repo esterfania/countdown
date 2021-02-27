@@ -75,7 +75,7 @@ export function Navbar() {
     <NavbarWrapper>
       <nav>
         <div />
-        <div title='Home' />
+        <div title="Home" />
         <div />
       </nav>
     </NavbarWrapper>

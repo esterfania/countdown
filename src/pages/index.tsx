@@ -2,13 +2,7 @@ import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 
 import React from 'react';
-import {
-  ExperienceBar,
-  Profile,
-  CompletedChallenges,
-  Countdown,
-  Navbar,
-} from '../components';
+import { ExperienceBar, Profile, CompletedChallenges, Countdown, Navbar } from '../components';
 import styled from 'styled-components';
 import { ChallengeBox } from '../components/ChallengeBox';
 import { CountdownProvider } from '../contexts/CountdownContext';
@@ -60,16 +54,13 @@ export default function Home(props: HomeProps) {
       <Navbar></Navbar>
       <HomeContainer>
         <Head>
-          <link rel='shortcut icon' href='favicon.png' type='image/png' />
-          <link rel='preconnect' href='https://fonts.gstatic.com' />
+          <link rel="shortcut icon" href="favicon.png" type="image/png" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap'
-            rel='stylesheet'
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap"
+            rel="stylesheet"
           />
-          <link
-            href='https://fonts.googleapis.com/icon?family=Material+Icons'
-            rel='stylesheet'
-          />
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
           <title>Início | move.it</title>
         </Head>
         <ExperienceBar />
