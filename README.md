@@ -24,10 +24,10 @@
 </p>
 
 <h2 align="center">
-    <img alt="Move-Yourself" title="#Move-Yourself" src="https://user-images.githubusercontent.com/35200622/109371085-f3b87b00-7881-11eb-991c-0dbfebf3fe9f.png" width="200px" />
+    <img alt="Move-Yourself" title="#Move-Yourself" src="https://user-images.githubusercontent.com/35200622/109424302-e73b3c00-79c1-11eb-9cde-c08c9fdbdd36.png" width="200px" />
 </h2>
 <h2 align="center">
-    <img alt="Move-Yourself" title="#Move-Yourself" src="https://user-images.githubusercontent.com/35200622/109371133-3c703400-7882-11eb-97c6-24819272de70.png" width="500px" />
+    <img alt="Move-Yourself" title="#Move-Yourself" src="https://user-images.githubusercontent.com/35200622/109424307-ea362c80-79c1-11eb-808e-ae2c4c808e60.png" width="500px" />
 </h2>
 
 
