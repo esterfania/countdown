@@ -7,7 +7,7 @@ const CountdownWrapper = styled.div`
   font-family: Rajdhani;
   font-weight: 600;
   font-size: 8.5rem;
-  color: ${(props) => props.theme.title};
+  color: ${(props) => props.theme.colors.title};
 
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@ const CountdownWrapper = styled.div`
     align-items: center;
 
     border-radius: 5px;
-    background: ${(props) => props.theme.white};
+    background: ${(props) => props.theme.colors.white};
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 
     text-align: center;
@@ -33,10 +33,10 @@ const CountdownWrapper = styled.div`
       flex: 1;
     }
     > span:first-child {
-      border-right: 1px solid ${(props) => props.theme.grayLine};
+      border-right: 1px solid ${(props) => props.theme.colors.grayLine};
     }
     > span:last-child {
-      border-left: 1px solid ${(props) => props.theme.grayLine};
+      border-left: 1px solid ${(props) => props.theme.colors.grayLine};
     }
   }
 `;
@@ -63,10 +63,7 @@ export function Countdown() {
         </div>
       </CountdownWrapper>
       {hasFinished ? (
-        <CountdownButton isDisabled={true}>
-          Ciclo encerrado
-          <img src="/icons/check_circle.svg" alt="check_circle"></img>
-        </CountdownButton>
+        <CountdownButton isDisabled={true}>Ciclo encerrado</CountdownButton>
       ) : (
         <>
           {isActive ? (

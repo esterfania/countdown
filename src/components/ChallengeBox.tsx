@@ -30,11 +30,11 @@ const ChallengeBoxActiveWrapper = styled.section`
   display: flex;
   flex-direction: column;
   header {
-    color: ${(props) => props.theme.blue};
+    color: ${(props) => props.theme.colors.blue};
     font-weight: 600;
     font-size: 1.25rem;
     padding: 0 2rem 1.5rem;
-    border-bottom: 1px solid ${(props) => props.theme.grayLine};
+    border-bottom: 1px solid ${(props) => props.theme.colors.grayLine};
   }
   main {
     flex: 1;
@@ -50,7 +50,7 @@ const ChallengeBoxActiveWrapper = styled.section`
   strong {
     font-weight: 600;
     font-size: 2rem;
-    color: ${(props) => props.theme.title};
+    color: ${(props) => props.theme.colors.title};
     margin: 1.5rem 1rem;
   }
   img {
@@ -68,16 +68,16 @@ const ChallengeBoxActiveWrapper = styled.section`
     justify-content: center;
     border: 0;
     border-radius: 5px;
-    color: ${(props) => props.theme.white};
+    color: ${(props) => props.theme.colors.white};
     font-size: 1rem;
     font-weight: 600;
     transition: filter 0.2s;
 
     :first-child {
-      background: ${(props) => props.theme.red};
+      background: ${(props) => props.theme.colors.red};
     }
     :last-child {
-      background: ${(props) => props.theme.green};
+      background: ${(props) => props.theme.colors.green};
     }
     &:hover {
       filter: brightness(0.9);
@@ -96,7 +96,7 @@ const ChallengeBoxActiveWrapper = styled.section`
 `;
 const ChallengeBoxContainer = styled.section`
   height: 100%;
-  background-color: ${(props) => props.theme.white};
+  background-color: ${(props) => props.theme.colors.white};
   border-radius: 5px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   padding: 1.5rem 2rem;

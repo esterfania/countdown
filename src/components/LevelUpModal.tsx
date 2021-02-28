@@ -15,7 +15,7 @@ const Modal = styled.div`
   align-items: center;
 
   div {
-    background: ${(props) => props.theme.white};
+    background: ${(props) => props.theme.colors.white};
     width: 100%;
     max-width: 400px;
     padding: 2rem 3rem;
@@ -26,17 +26,17 @@ const Modal = styled.div`
     header {
       font-size: 8.75rem;
       font-weight: 600;
-      color: ${(props) => props.theme.blue};
+      color: ${(props) => props.theme.colors.blue};
       background: url('/icons/levelup.svg') no-repeat center;
       background-size: contain;
     }
     strong {
       font-size: 2.25rem;
-      color: ${(props) => props.theme.title};
+      color: ${(props) => props.theme.colors.title};
     }
     p {
       font-size: 1.25rem;
-      color: ${(props) => props.theme.text};
+      color: ${(props) => props.theme.colors.text};
       margin-top: 0.25rem;
     }
     button {

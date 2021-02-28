@@ -15,7 +15,7 @@ const ExperienceBarWrapper = styled.header`
     flex: 1;
     height: 4px;
     border-radius: 4px;
-    background: ${(props) => props.theme.grayLine};
+    background: ${(props) => props.theme.colors.grayLine};
     margin: 0 1.5rem;
     position: relative;
   }
@@ -24,7 +24,7 @@ const ExperienceBarWrapper = styled.header`
     > div {
       height: 4px;
       border-radius: 4px;
-      background: ${(props) => props.theme.green};
+      background: ${(props) => props.theme.colors.green};
     }
 
     > span {
