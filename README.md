@@ -75,6 +75,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - 🔵 [TypeScript][typescript]
 - ⚛️ [React][reactjs]
 - 🔼 [NextJs][next]
+- 💅 [Styled-components][styled-components]
 
 ## 🤔 Como contribuir <a name = "contribute"></a>
 
