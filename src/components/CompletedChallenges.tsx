@@ -9,7 +9,7 @@ const CompletedChallengesWrapper = styled.div`
 
   margin-top: 3.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1.5px solid ${(props) => props.theme.grayLine};
+  border-bottom: 1.5px solid ${(props) => props.theme.colors.grayLine};
 
   > :first-child {
     font-size: 1.25rem;

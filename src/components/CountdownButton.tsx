@@ -1,66 +1,62 @@
 import { MouseEventHandler, ReactNode } from 'react';
 import styled from 'styled-components';
+import FeatherIcon from 'feather-icons-react';
 
-const ButtonWrapper = styled.button`
-  background: ${(props) => props.theme.blue};
-  color: ${(props) => props.theme.grayLine};
-  border-radius: 5px;
-  border: none;
-  height: 5rem;
-  display: block;
-  width: 100%;
-  margin-top: 2rem;
-  font-size: 1.25rem;
-  transition: background-color 0.2s;
-  font-weight: 600;
-
-  &:not(:disabled):hover {
-    background: ${(props) => props.theme.blueDark};
-  }
-
-  &:disabled {
-    background: ${(props) => props.theme.white};
-    color: ${(props) => props.theme.text};
-    cursor: not-allowed;
-    border-bottom: 0.25rem solid ${(props) => props.theme.green};
-  }
-  > img {
-    padding-left: 0.5rem;
-    vertical-align: middle;
-  }
-`;
-const ButtonWrapperActive = styled.button`
-  background: ${(props) => props.theme.red};
-  color: ${(props) => props.theme.white};
-  border-radius: 5px;
-  border: none;
-  height: 5rem;
-  display: block;
-  width: 100%;
-  margin-top: 2rem;
-  font-size: 1.25rem;
-  transition: background-color 0.2s;
-  font-weight: 600;
-
-  &:not(:disabled):hover {
-    filter: brightness(0.8);
-  }
-`;
 interface CountdownButtonProps {
   children?: ReactNode;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   active?: boolean;
   isDisabled?: boolean;
 }
+const ButtonWrapper = styled.button`
+  border-radius: 5px;
+  border: none;
+  height: 5rem;
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  transition: background-color 0.2s;
+  font-weight: 600;
+  svg {
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  &:not(:disabled):hover {
+    filter: brightness(0.8);
+  }
+`;
+
+const ButtonDefault = styled(ButtonWrapper)`
+  background: ${(props) => props.theme.colors.blue};
+  color: ${(props) => props.theme.colors.grayLine};
+
+  &:disabled {
+    background: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.text};
+    cursor: not-allowed;
+    border-bottom: 0.25rem solid ${(props) => props.theme.colors.green};
+  }
+`;
+const ButtonActive = styled(ButtonWrapper)`
+  background: ${(props) => props.theme.colors.red};
+  color: ${(props) => props.theme.colors.white};
+`;
 
 export function CountdownButton(props: CountdownButtonProps) {
   return props.active ? (
-    <ButtonWrapperActive type="button" onClick={props.onClick} disabled={props.isDisabled}>
+    <ButtonActive type="button" onClick={props.onClick} disabled={props.isDisabled}>
       {props.children}
-    </ButtonWrapperActive>
+      {<FeatherIcon align-center icon="x" />}
+    </ButtonActive>
   ) : (
-    <ButtonWrapper type="button" onClick={props.onClick} disabled={props.isDisabled}>
+    <ButtonDefault type="button" onClick={props.onClick} disabled={props.isDisabled}>
       {props.children}
-    </ButtonWrapper>
+      {!props.isDisabled ? (
+        <FeatherIcon align-center icon="play" />
+      ) : (
+        <FeatherIcon align-center icon="check-circle" />
+      )}
+    </ButtonDefault>
   );
 }
