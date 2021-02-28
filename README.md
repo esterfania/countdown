@@ -90,4 +90,5 @@ Feito com ❤️ por Esterfania Gama 👋🏽 [Entre em contato!](https://www.li
 [typescript]: https://www.typescriptlang.org/
 [reactjs]: https://reactjs.org
 [Rocketseat]:https://github.com/Rocketseat
+[styled-components]:https://styled-components.com/
 
