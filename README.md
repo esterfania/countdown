@@ -48,6 +48,12 @@ A aplicação visa ajudar pessoas que ficam muito tempo na frente do computador 
 se alongar. Usando do método de Pomodoro, lembrando o usuário a cada período de tempo realizar uma atividade
 que ao ser realizada, o usuário ganha experiência, subindo seu level<br/> 
 
+As implementações extras que fiz, foram:
+- Instalar a lib Feather icons para React.
+- Utlizar styled components com dark and light theme.
+- Fazer a persistência do theme no localStorage.
+- Deixar a aplicação responsiva para mobile.
+
 
 <span align="center">
 	<h2>Demo</h2>
