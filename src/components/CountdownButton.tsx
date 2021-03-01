@@ -47,16 +47,12 @@ export function CountdownButton(props: CountdownButtonProps) {
   return props.active ? (
     <ButtonActive type="button" onClick={props.onClick} disabled={props.isDisabled}>
       {props.children}
-      {<FeatherIcon align-center icon="x" />}
+      {<FeatherIcon icon="x" />}
     </ButtonActive>
   ) : (
     <ButtonDefault type="button" onClick={props.onClick} disabled={props.isDisabled}>
       {props.children}
-      {!props.isDisabled ? (
-        <FeatherIcon align-center icon="play" />
-      ) : (
-        <FeatherIcon align-center icon="check-circle" />
-      )}
+      {!props.isDisabled ? <FeatherIcon icon="play" /> : <FeatherIcon icon="check-circle" />}
     </ButtonDefault>
   );
 }
