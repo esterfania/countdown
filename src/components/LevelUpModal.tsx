@@ -3,7 +3,7 @@ import { ChallengesContext } from '../contexts/ChallengesContext';
 import styled from 'styled-components';
 
 const Modal = styled.div`
-  background: rgba(242, 243, 245, 0.8);
+  background: rgba(242, 243, 245, 0.3);
   position: fixed;
   top: 0;
   bottom: 0;
