@@ -2,7 +2,6 @@ import { createContext, useState, ReactNode, useEffect } from 'react';
 import challenges from '../../challenges.json';
 import Cookies from 'js-cookie';
 import { LevelUpModal } from '../components/LevelUpModal';
-import { isMobile } from '../utils/isMobile';
 
 export const ChallengesContext = createContext({} as ChallengesContextData);
 
@@ -40,9 +39,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengsProviderProps
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 
   useEffect(() => {
-    if (!isMobile) {
-      Notification.requestPermission();
-    }
+    Notification?.requestPermission();
   }, []);
 
   useEffect(() => {
@@ -67,12 +64,11 @@ export function ChallengesProvider({ children, ...rest }: ChallengsProviderProps
     setActiveChallenge(challenge);
 
     new Audio('/notification.mp3').play();
-    if (!isMobile) {
-      if (Notification.permission === 'granted') {
-        new Notification('Novo desafio 🎉🎉🎉', {
-          body: `Valendo ${challenge.amount} xp!`,
-        });
-      }
+
+    if (Notification?.permission === 'granted') {
+      new Notification('Novo desafio 🎉🎉🎉', {
+        body: `Valendo ${challenge.amount} xp!`,
+      });
     }
   }
 
