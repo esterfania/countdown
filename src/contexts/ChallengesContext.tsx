@@ -40,7 +40,6 @@ export function ChallengesProvider({ children, ...rest }: ChallengsProviderProps
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 
   useEffect(() => {
-    console.log(isMobile());
     !isMobile() && Notification.requestPermission();
   }, []);
 
