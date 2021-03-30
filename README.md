@@ -13,7 +13,7 @@
   </a>
 	
   
-  <a href="https://github.com/Gabrielpdev/Move-Yourself/commits/master">
+  <a href="https://github.com/esterfania/countdown/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/esterfania/countdown">
   </a>
 
